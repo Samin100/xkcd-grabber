@@ -81,7 +81,7 @@ while True:
 
 end = time.time()
 print('Scraping complete. Downloaded ' + str(downloadCount) + ' comics.')
-print('Elapsed time: ' + str(end - start) + ' seconds')
+print('Elapsed time: ' + str(end - start)[:6] + ' seconds')
 
 if len(failedDownloads) > 0:
     for failure in failedDownloads:
